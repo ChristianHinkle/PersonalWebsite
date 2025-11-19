@@ -13,7 +13,7 @@ namespace ChristianHinko.Services
         {
             Theme = new MudTheme()
             {
-                Palette = new Palette()
+                PaletteLight = new PaletteLight()
                 {
                     Primary = new MudColor(127, 95, 255, 1.0),
                     Secondary = new MudColor(15, 223, 191, 1.0),
@@ -42,8 +42,8 @@ namespace ChristianHinko.Services
             };
 
             // Use the dark mode text color for our appbar text color
-            Theme.Palette.AppbarText = Theme.PaletteDark.TextPrimary;
-            Theme.PaletteDark.AppbarText = Theme.Palette.AppbarText;
+            Theme.PaletteLight.AppbarText = Theme.PaletteDark.TextPrimary;
+            Theme.PaletteDark.AppbarText = Theme.PaletteLight.AppbarText;
 
             DefaultScrollbar = false;
 
