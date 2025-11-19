@@ -50,7 +50,7 @@ namespace ChristianHinko.Services
                     Date = new DateTime(2025, 01, 08),
                     ImageSrc = "/_content/ChristianHinko/images/PlayDdrAtHome.png",
                     Slug = "play-ddr-at-home-easy-mode",
-                    Component = typeof(PlayDdrAtHome_EasyMode),
+                    Component = typeof(PlayDdrAtHomeEasyMode),
                     IsDisplayed = false
                 }
             };
