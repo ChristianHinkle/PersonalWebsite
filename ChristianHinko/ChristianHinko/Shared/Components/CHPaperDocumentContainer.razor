@@ -1,10 +1,11 @@
 ﻿@using MudBlazorExtensionLibrary.Services
+@using System.Text
 @inject MBELLayoutService LayoutService
 
 <link href="/_content/ChristianHinko/css/page-print-us-letter.css" rel="stylesheet">
 
 <div class="mud-width-full mud-height-full" style="background-color: var(--mud-palette-background-grey);">
-    <MudPaper Class="ch-paper-us-letter mx-auto ch-paper-us-letter-padding-third-x ch-paper-us-letter-padding-sixth-y" Square="true">
+    <MudPaper Class="@BuildPaperClassString()" Square="true">
         @ChildContent
     </MudPaper>
 </div>
@@ -20,4 +21,19 @@
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string PaperClass { get; set; } = "ch-paper-us-letter ch-paper-us-letter-padding-x ch-paper-us-letter-padding-y";
+
+    private string BuildPaperClassString()
+    {
+        StringBuilder stringBuilder = new();
+
+        // Use auto margin on the X axis, to center the paper.
+        stringBuilder.Append("mx-auto");
+        stringBuilder.Append(' ');
+        stringBuilder.Append(PaperClass);
+
+        return stringBuilder.ToString();
+    }
 }
