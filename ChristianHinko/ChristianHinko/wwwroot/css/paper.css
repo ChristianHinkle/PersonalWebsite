@@ -44,30 +44,78 @@
  *
  */
 .ch-paper-us-letter-padding-half-x {
-    padding-left: 0.5in;
-    padding-right: 0.5in;
+    padding-left: calc(1in / 2);
+    padding-right: calc(1in / 2);
 }
 
 /**
  *
  */
 .ch-paper-us-letter-padding-half-y {
-    padding-top: 0.5in;
-    padding-bottom: 0.5in;
+    padding-top: calc(1in / 2);
+    padding-bottom: calc(1in / 2);
+}
+
+/**
+ *
+ */
+.ch-paper-us-letter-padding-third-x {
+    padding-left: calc(1in / 3);
+    padding-right: calc(1in / 3);
+}
+
+/**
+ *
+ */
+.ch-paper-us-letter-padding-third-y {
+    padding-top: calc(1in / 3);
+    padding-bottom: calc(1in / 3);
 }
 
 /**
  *
  */
 .ch-paper-us-letter-padding-quarter-x {
-    padding-left: 0.25in;
-    padding-right: 0.25in;
+    padding-left: calc(1in / 4);
+    padding-right: calc(1in / 4);
 }
 
 /**
  *
  */
 .ch-paper-us-letter-padding-quarter-y {
-    padding-top: 0.25in;
-    padding-bottom: 0.25in;
+    padding-top: calc(1in / 4);
+    padding-bottom: calc(1in / 4);
+}
+
+/**
+ *
+ */
+.ch-paper-us-letter-padding-sixth-x {
+    padding-left: calc(1in / 6);
+    padding-right: calc(1in / 6);
+}
+
+/**
+ *
+ */
+.ch-paper-us-letter-padding-sixth-y {
+    padding-top: calc(1in / 6);
+    padding-bottom: calc(1in / 6);
+}
+
+/**
+ *
+ */
+.ch-paper-us-letter-padding-eighth-x {
+    padding-left: calc(1in / 8);
+    padding-right: calc(1in / 8);
+}
+
+/**
+ *
+ */
+.ch-paper-us-letter-padding-eighth-y {
+    padding-top: calc(1in / 8);
+    padding-bottom: calc(1in / 8);
 }
