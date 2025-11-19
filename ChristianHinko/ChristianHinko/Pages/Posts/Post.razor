@@ -5,7 +5,7 @@
 
 @if (PostInfo is not null)
 {
-    // Render the post info's component and use the post info as a cascading value
+    // Render the post info's component and use the post info as a cascading value.
     <CascadingValue Value="@PostInfo" Name="PostInfo" IsFixed="true">
         <DynamicComponent Type="@PostInfo.Component" />
     </CascadingValue>
@@ -28,8 +28,8 @@
     {
         base.OnParametersSet();
 
-        // Find post info by slug
-        PostInfo = PostInfoService.PostInfos.Find(
+        // Find our post info by slug.
+        PostInfo = PostInfoService.PostInfosIncludingNonDisplayed.Find(
                 (postInfo) => (postInfo.Slug == Slug)
             );
     }

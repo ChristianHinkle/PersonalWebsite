@@ -8,11 +8,13 @@ namespace ChristianHinko.Services
     /// </summary>
     public class CHPostInfoService : ICHPostInfoService
     {
-        public List<CHPostInfo> PostInfos { get; set; }
+        public List<CHPostInfo> PostInfos { get; init; }
+
+        public List<CHPostInfo> PostInfosIncludingNonDisplayed { get; init; }
 
         public CHPostInfoService()
         {
-            PostInfos = new List<CHPostInfo>()
+            PostInfosIncludingNonDisplayed = new List<CHPostInfo>()
             {
                 new CHPostInfo()
                 {
@@ -37,14 +39,28 @@ namespace ChristianHinko.Services
                     Title = "Play DDR At Home!",
                     Subtitle = "Run your DanceDanceRevolution arcade game on your PC.",
                     Date = new DateTime(2025, 01, 08),
-                    ImageSrc = "/_content/ChristianHinko/images/PlayDDRAtHome.png",
+                    ImageSrc = "/_content/ChristianHinko/images/PlayDdrAtHome.png",
                     Slug = "play-ddr-at-home",
-                    Component = typeof(PlayDDRAtHome)
+                    Component = typeof(PlayDdrAtHome)
+                },
+                new CHPostInfo()
+                {
+                    Title = "Play DDR At Home!",
+                    Subtitle = "Run your DanceDanceRevolution arcade game on your PC.",
+                    Date = new DateTime(2025, 01, 08),
+                    ImageSrc = "/_content/ChristianHinko/images/PlayDdrAtHome.png",
+                    Slug = "play-ddr-at-home-easy-mode",
+                    Component = typeof(PlayDdrAtHome_EasyMode),
+                    IsDisplayed = false
                 }
             };
 
-            // Sort PostInfos by date
-            PostInfos.Sort((a, b) => a.Date.CompareTo(b.Date));
+            // Sort the post infos by date.
+            PostInfosIncludingNonDisplayed.Sort((a, b) => a.Date.CompareTo(b.Date));
+
+            // Initialize the displayed post infos by copying all of the post infos and filtering them based on their "IsDisplayed" bool.
+            PostInfos = new(PostInfosIncludingNonDisplayed);
+            PostInfos.RemoveAll(item => !item.IsDisplayed);
         }
     }
 }

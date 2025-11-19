@@ -7,6 +7,8 @@ namespace ChristianHinko.Services
     /// </summary>
     public interface ICHPostInfoService
     {
-        public List<CHPostInfo> PostInfos { get; set; }
+        public List<CHPostInfo> PostInfos { get; init; }
+
+        public List<CHPostInfo> PostInfosIncludingNonDisplayed { get; init; }
     }
 }

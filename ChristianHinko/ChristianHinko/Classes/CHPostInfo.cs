@@ -24,5 +24,11 @@
         /// </summary>
         /// <seealso cref="Pages.Posts.Post" />
         public Type Component { get; init; } = default!;
+
+        /// <summary>
+        /// If true, include this post in the lists displayed by the website. Otherwise, the post is still
+        /// publicly accessible via its URL.
+        /// </summary>
+        public bool IsDisplayed { get; init; } = true!;
     }
 }
