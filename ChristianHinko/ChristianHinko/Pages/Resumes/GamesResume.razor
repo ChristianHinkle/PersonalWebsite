@@ -268,20 +268,20 @@
         </li>
     </ul>
     <CHResumeSection Title="Skills" />
-    @{
-        const string SkillGridStyle = "display: grid; grid-auto-flow: column; column-gap: 25px; grid-template-rows: repeat(3, minmax(0, 1fr));";
-    }
     <div class="mud-width-full d-flex flex-row justify-space-between" style="text-wrap: nowrap;">
         <div>
             <MudText Class="ch-resume-item-text" Typo="@Typo.body1">
                 Languages
             </MudText>
-            <div style="@SkillGridStyle">
+            <div style="@GetSkillGridStyle()">
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     C++
                 </MudText>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     C#
+                </MudText>
+                <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                    HLSL
                 </MudText>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     CMake
@@ -292,7 +292,7 @@
             <MudText Class="ch-resume-item-text" Typo="@Typo.body1">
                 Software
             </MudText>
-            <div style="@SkillGridStyle">
+            <div style="@GetSkillGridStyle()">
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     Unreal Engine
                 </MudText>
@@ -317,7 +317,7 @@
             <MudText Class="ch-resume-item-text" Typo="@Typo.body1">
                 General
             </MudText>
-            <div style="@SkillGridStyle">
+            <div style="@GetSkillGridStyle()">
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     Multiplayer
                 </MudText>
@@ -346,3 +346,11 @@
         </div>
     </div>
 </CHPaperDocumentContainer>
+
+@code
+{
+    static string GetSkillGridStyle()
+    {
+        return "display: grid; grid-auto-flow: column; column-gap: 25px; grid-template-rows: repeat(3, minmax(0, 1fr));";
+    }
+}
