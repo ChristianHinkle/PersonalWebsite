@@ -113,14 +113,14 @@
                 </li>
             </ul>
         </li>
-        <li class="mud-width-full d-flex flex-row">
+        <li class="d-flex flex-row">
             <CHIndentBlock IndentationLevel="1" />
             <div>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     <span class="ch-resume-item-category-text">Team Coordination</span>
                 </MudText>
                 <ul style="list-style-type: none;">
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Scoped features for design meetings, clarifying technical feasiblity and offering alternatives as needed.
@@ -129,7 +129,7 @@
                 </ul>
             </div>
         </li>
-        <li class="mud-width-full d-flex flex-row">
+        <li class="d-flex flex-row">
             <CHIndentBlock IndentationLevel="1" />
             <div>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
@@ -137,20 +137,20 @@
                 </MudText>
             </div>
         </li>
-        <li class="mud-width-full d-flex flex-row">
+        <li class="d-flex flex-row">
             <CHIndentBlock IndentationLevel="1" />
             <div>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     <span class="ch-resume-item-category-text">Multiplayer - </span>Refactored existing game systems to support multiplayer.
                 </MudText>
                 <ul style="list-style-type: none;">
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Implemented core network replication code used by the higher-level game systems.
                         </MudText>
                     </li>
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Optimized network bandwidth overhead (delta-based replication, variable-size serialization, local ID mapping).
@@ -159,20 +159,20 @@
                 </ul>
             </div>
         </li>
-        <li class="mud-width-full d-flex flex-row">
+        <li class="d-flex flex-row">
             <CHIndentBlock IndentationLevel="1" />
             <div>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
                     <span class="ch-resume-item-category-text">Developer Tools - </span>Streamlined and automated workflows for the rest of the team (artists, designers, QA).
                 </MudText>
                 <ul style="list-style-type: none;">
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Generate assets with custom editor and command-line tools.
                         </MudText>
                     </li>
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Sped up QA testing with custom runtime tools (cheats) and console command auto-completion.
@@ -196,26 +196,26 @@
         </Date>
     </CHResumeItem>
     <ul style="list-style-type: none;">
-        <li class="mud-width-full d-flex flex-row">
+        <li class="d-flex flex-row">
             <CHIndentBlock IndentationLevel="1" />
             <div>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                    <span class="ch-resume-item-category-text">GameCore - </span>Built a library of C++ utils for Unreal, tested in multiple game projects (including Towers of Aghasba).
+                    <MudIconButton Href="https://github.com/b2hinkle/GameCore" Target="_blank" Size="@Size.Small" Icon="@MBELIcons.Material.LinkClassicSolid"></MudIconButton><span class="ch-resume-item-category-text">GameCore - </span>Wrote C++ utilities for Unreal, tested in multiple game projects (including Towers of Aghasba).
                 </MudText>
                 <ul style="list-style-type: none;">
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Encourage modern C++ practices, providing a concepts library for the Unreal Engine API.
                         </MudText>
                     </li>
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Enforce safer C++ code by implementing asserted cast functions and USTRUCT downcast functions.
                         </MudText>
                     </li>
-                    <li class="mud-width-full d-flex flex-row">
+                    <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
                             <CHBulletText />Minimize usage of costly free-store allocations caused by the engine's code.
@@ -228,7 +228,7 @@
     <CHResumeItem>
         <Title>
             <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                <span class="ch-resume-item-text">C++ Libraries</span><MudIconButton Href="https://github.com/ChristianHinko/MeddySDK" Target="_blank" Size="@Size.Small" Icon="@MBELIcons.Material.LinkClassicSolid"></MudIconButton>
+                <span class="ch-resume-item-text">C++ Libraries</span>
             </MudText>
         </Title>
         <Date>
@@ -242,7 +242,7 @@
             <CHIndentBlock IndentationLevel="1" />
             <div>
                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                    <span class="ch-resume-item-category-text">MeddySDK - </span>Consolidated the best practices of modern CMake into a collection of C++ projects.
+                    <MudIconButton Href="https://github.com/ChristianHinkle/MeddySDK" Target="_blank" Size="@Size.Small" Icon="@MBELIcons.Material.LinkClassicSolid"></MudIconButton><span class="ch-resume-item-category-text">MeddySDK - </span>Consolidated the best practices of modern CMake into a collection of C++ projects.
                 </MudText>
                 <ul style="list-style-type: none;">
                     <li class="d-flex flex-row">
@@ -254,7 +254,7 @@
                     <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                            <CHBulletText />Keep dependencies isolated and accessible via `find_package` along with FetchContent or ExternalProject.
+                            <CHBulletText />Keeps dependencies isolated and accessible via `find_package` along with FetchContent or ExternalProject.
                         </MudText>
                     </li>
                     <li class="d-flex flex-row">
