@@ -13,45 +13,44 @@
     <MudText Class="ch-resume-subheader-text" Typo="@Typo.subtitle1" Align="@Align.Center">
         Unreal Engine | Online Multiplayer | C++
     </MudText>
-    <div class="my-1">
-        <!-- Contact information -->
-        <div class="mud-width-full d-flex flex-row justify-space-around">
-            <div class="d-flex flex-row justify-center align-center">
-                <MudIcon Icon="@MBELIcons.Material.EarthAmericasClassicSolid" Color="@Color.Primary" Size="@Size.Small" />
-                <div style="width: 6px;"></div>
-                <MudLink Href="https://christianhinkle.com/games" Target="_blank" Underline="@Underline.Always">
-                    <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
-                        https://christianhinkle.com/games
-                    </MudText>
-                </MudLink>
-            </div>
-            <div class="d-flex flex-row justify-center align-center">
-                <MudIcon Icon="@Icons.Material.Filled.Email" Color="@Color.Primary" />
-                <div style="width: 6px;"></div>
-                <MudLink Href="@Classes.SocialMedia.EmailAddressHyperlink" Target="_blank" Underline="@Underline.Always">
-                    <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
-                        @Classes.SocialMedia.EmailAddress
-                    </MudText>
-                </MudLink>
-            </div>
-            <div class="d-flex flex-row justify-center align-center">
-                <MudIcon Icon="@Icons.Custom.Brands.LinkedIn" Color="@Color.Primary" />
-                <div style="width: 6px;"></div>
-                <MudLink Href="@Classes.SocialMedia.LinkedInProfileUrl" Target="_blank" Underline="@Underline.Always">
-                    <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
-                        @Classes.SocialMedia.LinkedInProfileUsernamePretty
-                    </MudText>
-                </MudLink>
-            </div>
-            <div class="d-flex flex-row justify-center align-center">
-                <MudIcon Icon="@Icons.Custom.Brands.GitHub" Color="@Color.Primary" />
-                <div style="width: 6px;"></div>
-                <MudLink Href="@Classes.SocialMedia.GitHubProfileUrl" Target="_blank" Underline="@Underline.Always">
-                    <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
-                        @Classes.SocialMedia.GitHubProfileUsernamePretty
-                    </MudText>
-                </MudLink>
-            </div>
+    <div style="height: 5px;"></div>
+    <!-- Contact information -->
+    <div class="mud-width-full d-flex flex-row justify-space-around">
+        <div class="d-flex flex-row justify-center align-center">
+            <MudIcon Icon="@MBELIcons.Material.EarthAmericasClassicSolid" Color="@Color.Primary" Size="@Size.Small" />
+            <div style="width: 6px;"></div>
+            <MudLink Href="https://christianhinkle.com/games" Target="_blank" Underline="@Underline.Always">
+                <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
+                    https://christianhinkle.com/games
+                </MudText>
+            </MudLink>
+        </div>
+        <div class="d-flex flex-row justify-center align-center">
+            <MudIcon Icon="@Icons.Material.Filled.Email" Color="@Color.Primary" />
+            <div style="width: 6px;"></div>
+            <MudLink Href="@Classes.SocialMedia.EmailAddressHyperlink" Target="_blank" Underline="@Underline.Always">
+                <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
+                    @Classes.SocialMedia.EmailAddress
+                </MudText>
+            </MudLink>
+        </div>
+        <div class="d-flex flex-row justify-center align-center">
+            <MudIcon Icon="@Icons.Custom.Brands.LinkedIn" Color="@Color.Primary" />
+            <div style="width: 6px;"></div>
+            <MudLink Href="@Classes.SocialMedia.LinkedInProfileUrl" Target="_blank" Underline="@Underline.Always">
+                <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
+                    @Classes.SocialMedia.LinkedInProfileUsernamePretty
+                </MudText>
+            </MudLink>
+        </div>
+        <div class="d-flex flex-row justify-center align-center">
+            <MudIcon Icon="@Icons.Custom.Brands.GitHub" Color="@Color.Primary" />
+            <div style="width: 6px;"></div>
+            <MudLink Href="@Classes.SocialMedia.GitHubProfileUrl" Target="_blank" Underline="@Underline.Always">
+                <MudText Class="ch-resume-info-text" Typo="@Typo.body1">
+                    @Classes.SocialMedia.GitHubProfileUsernamePretty
+                </MudText>
+            </MudLink>
         </div>
     </div>
     <!-- Resume content -->
@@ -180,7 +179,7 @@
     <CHResumeItem>
         <Title>
             <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                <span class="ch-resume-item-text">O3DE Engine Contributions - </span>Made multiple build system improvements (CMake), now merged.
+                <span class="ch-resume-item-text">O3DE Engine Contributions - </span>Made multiple C++ and CMake improvements, now merged.
             </MudText>
         </Title>
         <Date>
@@ -189,6 +188,19 @@
             </MudText>
         </Date>
     </CHResumeItem>
+    <ul style="list-style-type: none;">
+        <li class="d-flex flex-row">
+            <CHIndentBlock IndentationLevel="1" />
+            <ul style="list-style-type: none;">
+                <li class="d-flex flex-row">
+                    <CHIndentBlock IndentationLevel="1" />
+                    <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                        <CHBulletText />Raise discussions in the developer discord server about engine bugs I encounter, and draft PRs as fixes.
+                    </MudText>
+                </li>
+            </ul>
+        </li>
+    </ul>
     <CHResumeItem>
         <Title>
             <MudText Class="ch-resume-text" Typo="@Typo.body1">

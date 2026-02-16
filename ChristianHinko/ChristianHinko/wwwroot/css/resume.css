@@ -11,6 +11,7 @@
 .ch-resume-header-text {
     font-size: 3rem;
     font-weight: bold;
+    line-height: 100%;
 }
 
 /**
@@ -19,6 +20,7 @@
 .ch-resume-subheader-text {
     font-size: 1rem;
     font-weight: bold;
+    line-height: 125%;
 }
 
 /**
