@@ -1,7 +1,7 @@
 ﻿@using System.Web
 @using System.Collections.Specialized
 
-<MudLink Href="@($"https://www.youtube.com/embed/{VideoId}?autoplay=1")" Target="_blank" Disabled=@(!Link)>
+<MudLink Href="@($"https://youtube.com/embed/{VideoId}?autoplay=1")" Target="_blank" Disabled=@(!Link)>
     <div class="mud-width-full mud-height-full" style="pointer-events: none;">
         <iframe
             class="@Class"
@@ -62,7 +62,7 @@
     /// </summary>
     public string GetYoutubeEmbedUrl()
     {
-        return ($"https://www.youtube.com/embed/{VideoId}" + "?" + GetYoutubeEmbedQueryStringParameters());
+        return ($"https://youtube.com/embed/{VideoId}" + "?" + GetYoutubeEmbedQueryStringParameters());
     }
 
     /// <summary>
