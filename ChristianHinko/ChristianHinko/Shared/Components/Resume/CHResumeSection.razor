@@ -1,12 +1,24 @@
-﻿<div style="height: 5px;"></div>
+﻿@if (EnableMarginTop)
+{
+    <div style="height: 5px;"></div>
+}
 <MudText Class="ch-resume-section-text" Typo="@Typo.h2" Align="@Align.Center">
     @Title
 </MudText>
 <MudDivider Vertical="false" />
-<div style="height: 5px;"></div>
+@if (EnableMarginBottom)
+{
+    <div style="height: 5px;"></div>
+}
 
 @code
 {
     [Parameter]
-    public string Title { get; set; }
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter]
+    public bool EnableMarginTop { get; set; } = true;
+
+    [Parameter]
+    public bool EnableMarginBottom { get; set; } = true;
 }

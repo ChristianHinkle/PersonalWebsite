@@ -53,3 +53,20 @@
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+/**
+ *
+ */
+.ch-resume-skills-text {
+    font-size: 0.75rem;
+    line-height: 120%;
+}
+
+/**
+ *
+ */
+.ch-resume-skills-category-text {
+    font-size: 0.85rem;
+    font-weight: bold;
+    line-height: 120%;
+}
