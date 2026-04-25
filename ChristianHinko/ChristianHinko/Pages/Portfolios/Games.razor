@@ -31,10 +31,15 @@
 <MudContainer MaxWidth="@MaxWidth.Large">
     <CHPortfolioSection Title="Professional Experience" />
     <CHPortfolioProjectStack>
-        <CHPortfolioProjectCard Id="engineer-at-dreamlit-games" Title="Engineer at Dreamlit Games">
+        <CHPortfolioProjectCard Id="shipped-towers-of-aghasba">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    Shipped <CHCiteItalic>Towers of Aghasba</CHCiteItalic>
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_GameStudio Value="Dreamlit" />
-                <CHInfoChip_GameTitle Value="Towers of Aghasba" />
+                <CHInfoChip_Platform Value="PS5, Steam" />
                 <CHInfoChip_DateRange DateFrom="Jun 2023" DateTo="May 2025" />
                 <CHInfoChip_Text Text="Full-Time"/>
                 <CHInfoChip_TeamSize Value="~25" />
@@ -49,7 +54,7 @@
                     <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
                         <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                            Shipped PS5 title <CHCiteItalic>Towers of Aghasba</CHCiteItalic>, developing for 2 years in both pre-launch and post-launch phases.
+                            Experience developing for 2 years, in both <span style="font-weight: bold;">pre-launch</span> and <span style="font-weight: bold;">post-launch</span> development phases.
                         </MudText>
                     </li>
                     <li class="d-flex flex-row">
@@ -58,29 +63,37 @@
                             <li class="d-flex flex-row">
                                 <CHIndentBlock IndentationLevel="1" />
                                 <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                                    <CHBulletText />Made 1st place editor's choice on PlayStation Indies store, and showcased in the State of Play (Sept 2024).
+                                    <CHBulletText />Addressed Sony Technical Requirements (TRCs), allowing <CHCiteItalic>Towers</CHCiteItalic> to pass certification for release on the PS5.
+                                </MudText>
+                            </li>
+                            <li class="d-flex flex-row">
+                                <CHIndentBlock IndentationLevel="1" />
+                                <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                    <CHBulletText />Made 1st place editor's choice on PlayStation Indies store, and was showcased in the State of Play (Sept 2024).
+                                </MudText>
+                            </li>
+                            <li class="d-flex flex-row">
+                                <CHIndentBlock IndentationLevel="1" />
+                                <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                    <CHBulletText />Scoped features for design meetings, clarifying technical feasiblity and offering alternatives as needed.
                                 </MudText>
                             </li>
                         </ul>
                     </li>
                     <li class="d-flex flex-row">
                         <CHIndentBlock IndentationLevel="1" />
-                        <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                            <CHBulletText />Addressed Sony Technical Requirement failures (TRCs), helping <CHCiteItalic>Towers</CHCiteItalic> pass certification for release on PS5.
-                        </MudText>
-                    </li>
-                    <li class="d-flex flex-row">
-                        <CHIndentBlock IndentationLevel="1" />
-                        <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                            <CHBulletText />Scoped features for design meetings, clarifying technical feasiblity and offering alternatives as needed.
-                        </MudText>
-                    </li>
-                    <li class="d-flex flex-row">
-                        <CHIndentBlock IndentationLevel="1" />
                         <div>
                             <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                                <span class="ch-resume-item-category-text">Gameplay - </span>Experience writing features & systems for the <span style="font-weight: bold;">open-world</span> genre (persistent code, network relevance).
+                                <span class="ch-resume-item-category-text">Gameplay - </span>Experience writing features & systems for the <span style="font-weight: bold;">open-world</span> genre (persistent logic, network relevancy).
                             </MudText>
+                            <ul style="list-style-type: none;">
+                                <li class="d-flex flex-row">
+                                    <CHIndentBlock IndentationLevel="1" />
+                                    <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                        <CHBulletText />Coordinated with animators & designers to implement combat abilities, mount mechanics, interact methods, more.
+                                    </MudText>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="d-flex flex-row">
@@ -110,6 +123,12 @@
                                         <CHBulletText />Optimized network bandwidth overhead (delta-based replication, variable-size serialization, local ID mapping).
                                     </MudText>
                                 </li>
+                                <li class="d-flex flex-row">
+                                    <CHIndentBlock IndentationLevel="1" />
+                                    <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                        <CHBulletText />Collaborated with coworker on outlining a roadmap and fixing the project's character movement code - planned solutions, created tasks, informed leadership and QA.
+                                    </MudText>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -123,7 +142,7 @@
                                 <li class="d-flex flex-row">
                                     <CHIndentBlock IndentationLevel="1" />
                                     <MudText Class="ch-resume-text" Typo="@Typo.body1">
-                                        <CHBulletText />Made it fast & easy to generate data assets, BPs, gameplay tags, skeletal mesh, HLOD, minimap, PCG, more.
+                                        <CHBulletText />Made it fast & easy to generate data assets, BPs, tags, meshes, anims, atlas texture, HLOD, minimap, PCG, more.
                                     </MudText>
                                 </li>
                                 <li class="d-flex flex-row">
@@ -144,7 +163,12 @@
     </CHPortfolioProjectStack>
     <CHPortfolioSection Title="Personal Projects & Open Source" />
     <CHPortfolioProjectStack>
-        <CHPortfolioProjectCard Id="o3de-game-framework" Title="O3DE Contributions and Framework">
+        <CHPortfolioProjectCard Id="o3de-game-framework">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    O3DE Contributions and Framework
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_DateRange DateFrom="Aug 2025" DateTo="Present" />
             </Info>
@@ -180,7 +204,12 @@
             <Details>
             </Details>
         </CHPortfolioProjectCard>
-        <CHPortfolioProjectCard Id="animation-setup" Title="Animation Setup">
+        <CHPortfolioProjectCard Id="animation-setup">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    Animation Setup
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_TeamSize Value="1" />
                 <CHInfoChip_DevelopmentTime Value="7 Months" />
@@ -234,7 +263,12 @@
                 </CHDetailsBlock>
             </Details>
         </CHPortfolioProjectCard>
-        <CHPortfolioProjectCard Id="custom-collision-queries" Title="Custom Collision Queries">
+        <CHPortfolioProjectCard Id="custom-collision-queries">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    Custom Collision Queries
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_TeamSize Value="2" />
                 <CHInfoChip_DevelopmentTime Value="2 Months" />
@@ -291,7 +325,12 @@
                 </CHDetailsBlock>
             </Details>
         </CHPortfolioProjectCard>
-        <CHPortfolioProjectCard Id="ability-system-setup" Title="Ability System Setup">
+        <CHPortfolioProjectCard Id="ability-system-setup">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    Ability System Setup
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_TeamSize Value="2" />
                 <CHInfoChip_DevelopmentTime Value="2 Years" />
@@ -348,7 +387,12 @@
                 </CHDetailsBlock>
             </Details>
         </CHPortfolioProjectCard>
-        <CHPortfolioProjectCard Id="input-setup" Title="Input Setup">
+        <CHPortfolioProjectCard Id="input-setup">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    Input Setup
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_TeamSize Value="2" />
                 <CHInfoChip_DevelopmentTime Value="1 Month" />
@@ -393,7 +437,12 @@
                 </CHDetailsBlock>
             </Details>
         </CHPortfolioProjectCard>
-        <CHPortfolioProjectCard Id="property-wrapper" Title="Property Wrapper">
+        <CHPortfolioProjectCard Id="property-wrapper">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    Property Wrapper
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_TeamSize Value="2" />
                 <CHInfoChip_DevelopmentTime Value="16 Months" />
@@ -435,7 +484,12 @@
                 </CHDetailsBlock>
             </Details>
         </CHPortfolioProjectCard>
-        <CHPortfolioProjectCard Id="meddy-sdk" Title="Meddy SDK">
+        <CHPortfolioProjectCard Id="meddy-sdk">
+            <Title>
+                <MudText Typo="@Typo.h3">
+                    Meddy SDK
+                </MudText>
+            </Title>
             <Info>
                 <CHInfoChip_TeamSize Value="1" />
                 <CHInfoChip_DevelopmentTime Value="12 Months" />

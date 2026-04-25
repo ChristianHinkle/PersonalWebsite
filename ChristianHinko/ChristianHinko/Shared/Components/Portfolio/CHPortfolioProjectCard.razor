@@ -6,9 +6,7 @@
             </div>
         </div>
         <div class="mud-width-full pa-4">
-            <MudText Typo="@Typo.h3">
-                @Title
-            </MudText>
+            @Title
             <div style="height: 10px;"></div>
             @Info
             <div style="height: 10px;"></div>
@@ -26,7 +24,7 @@
     public string Id { get; set; } = string.Empty;
 
     [Parameter]
-    public string Title { get; set; } = string.Empty;
+    public RenderFragment Title { get; set; }
 
     [Parameter]
     public RenderFragment Info { get; set; }
