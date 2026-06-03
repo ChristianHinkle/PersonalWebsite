@@ -41,7 +41,8 @@ namespace ChristianHinko.Services
                     Date = new DateTime(2025, 01, 08),
                     ImageSrc = "/_content/ChristianHinko/images/PlayDdrAtHome.png",
                     Slug = "play-ddr-at-home",
-                    Component = typeof(PlayDdrAtHome)
+                    Component = typeof(PlayDdrAtHome),
+                    IsDisplayed = false
                 },
                 new CHPostInfo()
                 {
