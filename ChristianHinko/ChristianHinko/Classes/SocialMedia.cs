@@ -2,7 +2,7 @@
 {
     public static partial class SocialMedia
     {
-        public const string LinkedInProfileUsername = "christianthinkle";
+        public const string LinkedInProfileUsername = "christianhnkl";
         public const string LinkedInProfileUsernamePretty = $"in/{LinkedInProfileUsername}";
         public const string LinkedInProfileUrl = $"https://linkedin.com/in/{LinkedInProfileUsername}";
 
