@@ -50,6 +50,13 @@
 /**
  *
  */
+.ch-resume-item-line {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+/**
+ *
+ */
 .ch-resume-item-category-text {
     font-size: 0.9rem;
     font-weight: bold;
