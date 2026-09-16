@@ -52,6 +52,7 @@
  */
 .ch-resume-item-line {
     background-color: rgba(0, 0, 0, 0.06);
+    print-color-adjust: exact;
 }
 
 /**
