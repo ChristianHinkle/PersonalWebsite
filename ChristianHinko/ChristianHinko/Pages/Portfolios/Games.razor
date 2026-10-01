@@ -483,10 +483,10 @@
                 </CHDetailsBlock>
             </Details>
         </CHPortfolioProjectCard>
-        <CHPortfolioProjectCard Id="meddy-sdk">
+        <CHPortfolioProjectCard Id="meddy-cli">
             <Title>
                 <MudText Typo="@Typo.h3">
-                    Meddy SDK
+                    Meddy CLI
                 </MudText>
             </Title>
             <Info>
@@ -500,30 +500,67 @@
                 </CHAspectRatioFitBlock>
             </Media>
             <Description>
-                <MudText Typo="@Typo.body1">
-                    Delivered MVP command-line application while documenting modern CMake best practices.
-                </MudText>
-                <MudText Typo="@Typo.body1">
-                    <br>
-                </MudText>
-                <MudText Typo="@Typo.body1">
-                    Designed a project structure that fulfills any CMake use case (namely, installation and local build use cases).
-                </MudText>
-                <MudText Typo="@Typo.body1">
-                    <br>
-                </MudText>
-                <MudText Typo="@Typo.body1">
-                    Keeps dependencies isolated and accessible via `find_package` along with FetchContent or ExternalProject.
-                </MudText>
-                <MudText Typo="@Typo.body1">
-                    <br>
-                </MudText>
-                <MudText Typo="@Typo.body1">
-                    Wrote automated tests with CTest, distributed products with CPack, and wrote reusable CMakePresets.
-                </MudText>
+                <ul style="list-style-type: none;">
+                    <li class="d-flex flex-row">
+                        <CHIndentBlock IndentationLevel="1" />
+                        <div>
+                            <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                <CHBulletText /><span class="ch-resume-item-category-text">MeddySDK - </span>Implements project creation and metadata operations, serialized with RapidJSON and Boost.Filesystem.
+                            </MudText>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-row">
+                        <CHIndentBlock IndentationLevel="1" />
+                        <div>
+                            <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                <CHBulletText /><span class="ch-resume-item-category-text">CommandParser - </span>Data-oriented parser for namespaced commands with named, flag, and positional args.
+                            </MudText>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-row">
+                        <CHIndentBlock IndentationLevel="1" />
+                        <div>
+                            <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                <CHBulletText /><span class="ch-resume-item-category-text">CppUtils - </span>Wrote zero-dependency, general-purpose C++ libraries (also used by my O3DE plugins).
+                            </MudText>
+                            <ul style="list-style-type: none;">
+                                <li class="d-flex flex-row">
+                                    <CHIndentBlock IndentationLevel="1" />
+                                    <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                        <CHBulletText />StdReimpl - Standard library rewrites to support modern C++ features on console platforms.
+                                    </MudText>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-row">
+                        <CHIndentBlock IndentationLevel="1" />
+                        <div>
+                            <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                <CHBulletText /><span class="ch-resume-item-category-text">CmakeProjectFramework - </span>Designed a project structure that fulfills any CMake use case (namely, installation and local build use cases).
+                            </MudText>
+                            <ul style="list-style-type: none;">
+                                <li class="d-flex flex-row">
+                                    <CHIndentBlock IndentationLevel="1" />
+                                    <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                        <CHBulletText />Keeps dependencies isolated and accessible via `find_package` along with FetchContent or ExternalProject.
+                                    </MudText>
+                                </li>
+                                <li class="d-flex flex-row">
+                                    <CHIndentBlock IndentationLevel="1" />
+                                    <MudText Class="ch-resume-text" Typo="@Typo.body1">
+                                        <CHBulletText />Wrote automated tests with CTest, distributed products with CPack, and wrote reusable CMakePresets.
+                                    </MudText>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </Description>
             <References>
+                <CHIconButtonLink Href="https://github.com/ChristianHinkle/MeddyCLI" Icon="@Icons.Custom.Brands.GitHub" Text="MeddyCLI" />
                 <CHIconButtonLink Href="https://github.com/ChristianHinkle/MeddySuperproject" Icon="@Icons.Custom.Brands.GitHub" Text="MeddySDK" />
+                <CHIconButtonLink Href="https://github.com/ChristianHinkle/CommandParserCpp" Icon="@Icons.Custom.Brands.GitHub" Text="CommandParser" />
                 <CHIconButtonLink Href="https://github.com/ChristianHinkle/CppUtils" Icon="@Icons.Custom.Brands.GitHub" Text="CppUtils" />
             </References>
             <Details>
