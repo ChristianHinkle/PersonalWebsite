@@ -53,8 +53,10 @@
             </MudText>
         </div>
     </div>
+    <div style="height: 5px;"></div>
     <!-- Resume content -->
     <CHResumeSection Title="Education" />
+    <div style="@GetSectionSpacerStyle()"></div>
     <CHResumeItem>
         <Title>
             <MudText Class="ch-resume-text" Typo="@Typo.body1">
@@ -67,7 +69,9 @@
             </MudText>
         </Date>
     </CHResumeItem>
+    <div style="@GetSectionSpacerStyle()"></div>
     <CHResumeSection Title="Professional Experience" />
+    <div style="@GetSectionSpacerStyle()"></div>
     <CHResumeItem>
         <Title>
             <MudText Class="ch-resume-text" Typo="@Typo.body1">
@@ -196,7 +200,9 @@
             </div>
         </li>
     </ul>
+    <div style="@GetSectionSpacerStyle()"></div>
     <CHResumeSection Title="Open Source & Personal Projects" />
+    <div style="@GetSectionSpacerStyle()"></div>
     <CHResumeItem>
         <Title>
             <MudText Class="ch-resume-text" Typo="@Typo.body1">
@@ -365,7 +371,7 @@
             </div>
         </li>
     </ul>
-    <CHResumeSection Title="Skills" EnableMarginBottom="false" EnableMarginTop="false" />
+    <CHResumeSection Title="Skills" />
     <div style="position: relative;">
         <div class="ch-resume-item-line" style="position: absolute; width: 100%; height: .8rem; top: 0.1rem;"></div>
         <div class="mud-width-full d-flex flex-row justify-space-between" style="position: relative; text-wrap: nowrap;">
@@ -489,5 +495,10 @@
     static string GetHeaderLinkAnchorTextStyle()
     {
         return "text-decoration: underline; color: #5555EE;";
+    }
+
+    static string GetSectionSpacerStyle()
+    {
+        return "height: 2px;";
     }
 }
