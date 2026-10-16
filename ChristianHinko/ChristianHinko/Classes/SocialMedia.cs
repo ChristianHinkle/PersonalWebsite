@@ -2,7 +2,7 @@
 {
     public static partial class SocialMedia
     {
-        public const string LinkedInProfileUsername = "christianhnkl";
+        public const string LinkedInProfileUsername = "ctnhinkle";
         public const string LinkedInProfileUsernamePretty = $"in/{LinkedInProfileUsername}";
         public const string LinkedInProfileUrl = $"https://linkedin.com/in/{LinkedInProfileUsername}";
 
@@ -10,25 +10,25 @@
         public const string GitHubProfileUsernamePretty = $"@{GitHubProfileUsername}";
         public const string GitHubProfileUrl = $"https://github.com/{GitHubProfileUsername}";
 
-        public const string EmailAddress = "christianthinkle@gmail.com";
+        public const string EmailAddress = "ctnhinkle@gmail.com";
         public const string EmailAddressHyperlink = $"mailto:{EmailAddress}";
 
-        public const string TwitterProfileUsername = "christianhnkl";
+        public const string TwitterProfileUsername = "ctnhinkle";
         public const string TwitterProfileUrl = $"https://twitter.com/{TwitterProfileUsername}";
 
-        public const string InstagramProfileUsername = "christianhnkl";
+        public const string InstagramProfileUsername = "ctnhinkle";
         public const string InstagramProfileUrl = $"https://instagram.com/{InstagramProfileUsername}";
 
-        public const string FacebookProfileUsername = "christianhnkl";
+        public const string FacebookProfileUsername = "ctnhinkle";
         public const string FacebookProfileUrl = $"https://facebook.com/{FacebookProfileUsername}";
 
         public const string YouTubeProfileUsername = "ChristianHinko";
         public const string YouTubeProfileUrl = $"https://youtube.com/@{YouTubeProfileUsername}";
 
-        public const string TwitchProfileUsername = "christianhnkl";
+        public const string TwitchProfileUsername = "ctnhinkle";
         public const string TwitchProfileUrl = $"https://twitch.tv/{TwitchProfileUsername}";
 
-        public const string TikTokProfileUsername = "christianhnkl";
+        public const string TikTokProfileUsername = "ctnhinkle";
         public const string TikTokProfileUrl = $"https://tiktok.com/@{TikTokProfileUsername}";
 
         public const string ArtStationProfileUsername = "christianhinkle";
@@ -43,7 +43,7 @@
         public const string RedditProfileUsername = "ChristianHinko";
         public const string RedditProfileUrl = $"https://reddit.com/user/{RedditProfileUsername}";
 
-        public const string PinterestProfileUsername = "christianhnkl";
+        public const string PinterestProfileUsername = "ctnhinkle";
         public const string PinterestProfileUrl = $"https://pinterest.com/{PinterestProfileUsername}";
 
         public const string TumblrProfileUsername = "christianhinkle";
