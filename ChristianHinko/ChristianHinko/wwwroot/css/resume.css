@@ -3,6 +3,7 @@
  */
 .ch-resume-text {
     font-size: 10.2pt;
+    font-weight: normal;
     line-height: 1.4;
 }
 
@@ -12,7 +13,7 @@
 .ch-resume-header-text {
     font-size: 24.0pt;
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.0;
 }
 
 /**
@@ -20,7 +21,7 @@
  */
 .ch-resume-subheader-text {
     font-size: 12.0pt;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.25;
 }
 
@@ -29,6 +30,8 @@
  */
 .ch-resume-info-text {
     font-size: 9.2pt;
+    font-weight: normal;
+    line-height: normal;
 }
 
 /**
@@ -37,14 +40,7 @@
 .ch-resume-section-text {
     font-size: 14.0pt;
     font-weight: bold;
-}
-
-/**
- *
- */
-.ch-resume-item-text {
-    font-size: 10.2pt;
-    font-weight: bold;
+    line-height: normal;
 }
 
 /**
@@ -58,9 +54,28 @@
 /**
  *
  */
+.ch-resume-item-text {
+    font-size: 10.2pt;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/**
+ *
+ */
+.ch-resume-item-date-text {
+    font-size: 9.2pt;
+    font-weight: normal;
+    line-height: normal;
+}
+
+/**
+ *
+ */
 .ch-resume-item-category-text {
     font-size: 10.2pt;
     font-weight: bold;
+    line-height: 1.4;
 }
 
 /**
@@ -68,6 +83,7 @@
  */
 .ch-resume-skills-text {
     font-size: 9.0pt;
+    font-weight: normal;
     line-height: 1.2;
 }
 
