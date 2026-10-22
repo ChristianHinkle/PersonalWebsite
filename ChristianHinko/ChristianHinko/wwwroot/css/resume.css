@@ -10,7 +10,7 @@
  *
  */
 .ch-resume-header-text {
-    font-size: 30.0pt;
+    font-size: 24.0pt;
     font-weight: bold;
     line-height: 1;
 }
@@ -28,14 +28,14 @@
  *
  */
 .ch-resume-info-text {
-    font-size: 9.6pt;
+    font-size: 9.2pt;
 }
 
 /**
  *
  */
 .ch-resume-section-text {
-    font-size: 15.0pt;
+    font-size: 14.0pt;
     font-weight: bold;
 }
 
@@ -59,7 +59,7 @@
  *
  */
 .ch-resume-item-category-text {
-    font-size: 10.8pt;
+    font-size: 10.2pt;
     font-weight: bold;
 }
 
