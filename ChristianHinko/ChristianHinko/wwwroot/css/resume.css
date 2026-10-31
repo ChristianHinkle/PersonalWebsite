@@ -62,7 +62,7 @@
     font-size: 10.2pt;
     font-weight: bold;
     line-height: 1.4;
-    color: black;
+    color: color-mix(in oklab, black 80%, white);
 }
 
 /**
@@ -82,7 +82,7 @@
     font-size: 10.2pt;
     font-weight: bold;
     line-height: 1.4;
-    color: black;
+    color: color-mix(in oklab, black 80%, white);
 }
 
 /**
@@ -102,7 +102,7 @@
     font-size: 10.2pt;
     font-weight: bold;
     line-height: 1.2;
-    color: black;
+    color: color-mix(in oklab, black 80%, white);
 }
 
 /**
