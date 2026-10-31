@@ -104,3 +104,26 @@
     line-height: 1.2;
     color: black;
 }
+
+/**
+ *
+ */
+.ch-resume-link-text {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/**
+ *
+ */
+.ch-resume-info-link-text {
+    text-decoration: underline;
+    color: #5555ee;
+}
+
+/**
+ *
+ */
+.ch-resume-info-link-icon {
+    color: #7777ee;
+}
