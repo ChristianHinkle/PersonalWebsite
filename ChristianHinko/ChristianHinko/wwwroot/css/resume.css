@@ -15,7 +15,7 @@
     font-size: 24.0pt;
     font-weight: bold;
     line-height: 1.0;
-    color: color-mix(in oklab, black 70%, white);
+    color: color-mix(in oklab, black 65%, white);
 }
 
 /**
